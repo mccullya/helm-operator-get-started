@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: boysherman/podinfo
-      tag: dev-18d429cd
+      tag: stg-
     replicaCount: 2
     hpa:
       enabled: true
