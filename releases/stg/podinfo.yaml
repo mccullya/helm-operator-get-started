@@ -10,13 +10,13 @@ metadata:
 spec:
   releaseName: podinfo-rc
   chart:
-    git: git@github.com:fluxcd/helm-operator-get-started
+    git: git@github.com:mccullya/helm-operator-get-started
     path: charts/podinfo
     ref: master
   values:
     image:
       repository: boysherman/podinfo
-      tag: stg-9ij63o4c
+      tag: dev-18d429cd
     replicaCount: 2
     hpa:
       enabled: true
