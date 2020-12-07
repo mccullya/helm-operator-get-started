@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-repository="stefanprodan/podinfo"
+repository="boysherman/podinfo"
 branch="master"
 version=""
-commit=$(cat /dev/urandom | env LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w 8 | head -n 1 | awk '{print tolower($0)}')
+commit="$(head -n 4096 /dev/urandom | openssl sha1 | fold -w 8 | head -n 1)"
 
 while getopts :r:b:v: o; do
     case "${o}" in
