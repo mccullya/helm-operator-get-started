@@ -18,13 +18,13 @@ h2c:
   enabled: false
 
 image:
-  repository: stefanprodan/podinfo
-  tag: 3.1.5
+  repository: mccullya/podinfo
+  tag: 3.1.6
   pullPolicy: IfNotPresent
 
 service:
   enabled: true
-  type: ClusterIP
+  type: NodePort
   metricsPort: 9797
   httpPort: 9898
   externalPort: 9898
